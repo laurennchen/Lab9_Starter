@@ -101,6 +101,10 @@
         this.name = "InvalidInputError";
       }
     }
+    
+    window.onerror = function() {
+      console.log('an error has occurred!!');
+    }
 
     let form = document.querySelector('form');
     form.addEventListener('submit', e => {
@@ -180,10 +184,6 @@
       
       TrackJS.track('ii not defined');
     });
-
-    if (window.onerror) {
-      console.log("an error has occurred!")
-    }
        
   </script>
 </body>
