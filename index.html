@@ -114,7 +114,7 @@
       let secondNum = document.querySelector('#second-num').value;
       let operator = document.querySelector('#operator').value;
       try {
-        //check if input is of correct type
+        //check if input is of the correct type
         if (/^\d+$/.test(firstNum) == false) {
           TrackJS.track('invalid input for first number!');
           throw new InvalidInputError("InvalidInputError");
