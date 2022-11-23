@@ -102,9 +102,9 @@
       }
     }
     
-    window.onerror = function() {
-      console.log('an error has occurred!!');
-    }
+    window.addEventListener('error', function () {
+      console.log("An error has occurred!")
+    });
 
     let form = document.querySelector('form');
     form.addEventListener('submit', e => {
